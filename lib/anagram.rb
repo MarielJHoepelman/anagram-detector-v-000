@@ -7,7 +7,8 @@ class Anagram
   end
 
   def match(list_of_words)
-
-  end
-  
+    list_of_words.detect do |possible_match|
+      word.split("").sort == possible_match.split("").split
+    end
+  end  
 end
